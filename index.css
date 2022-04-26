@@ -1,0 +1,180 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 20px;
+
+}
+
+/*css para estilos graficos*/
+html {
+
+    font-family: "Times New Roman", sans-serif, Arial;
+    background-color: #E5E5E5;
+}
+
+textarea {
+    font-size: 20px;
+
+}
+
+/*css para la dispositivos moviles*/
+
+header img {
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+button {
+    background-color: #0A3871;
+    color: white;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+button:hover {
+    background-color: #D8DFE8;
+    color: black;
+}
+
+button:focus {
+    background-color: #071c3b;
+    color: white;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+    grid-auto-rows: minmax(200px, auto);
+    margin-right: 15px;
+    margin-left: 15px;
+
+}
+
+.cajaEncriptar {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.cajaDesencriptar {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 500px;
+    border-radius: 20px;
+    box-shadow: 0px 5px 28px 5px #0A3871;
+
+}
+
+.textoEntrada {
+    flex: 2 400px;
+    border: 0;
+    background-color: #E5E5E5;
+    resize: none;
+    border-radius: 10px;
+}
+
+.textoSalida {
+    flex: 2 300px;
+    width: 90vw;
+    resize: none;
+}
+
+
+
+.botones {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.botones button {
+    flex: 1 auto;
+    margin: 5px;
+    font-size: 18px;
+    line-height: 1.5;
+    width: 50px;
+}
+
+
+/*panel de abajo*/
+
+
+.sinTexto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.conTexto {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.conTexto button {
+
+    flex: 1 auto;
+    font-size: 18px;
+    line-height: 1.5;
+    width: 250px;
+    margin-top: 20px;
+}
+
+footer {
+    background-color: #252525;
+    text-align: center;
+    color: white;
+    padding: 20px;
+    margin-top: 20px;
+    width: 98vw;
+
+}
+
+footer a {
+    color: white;
+
+}
+
+
+/*consulta de medios*/
+
+@media screen and (min-width: 1024px) {
+    .container {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 30px;
+        grid-auto-rows: minmax(80vh, auto);
+        margin-right: 15px;
+        margin-left: 15px;
+
+
+    }
+    header{
+        padding: 30px 30px 30px 0;
+    }
+
+    .textoSalida {
+
+        width: 30vw;
+        flex: 2 70vh;
+        resize: none;
+    }
+    footer{
+        width: 100%;
+        margin-top: 100px;
+    }
+}
+
+
+
